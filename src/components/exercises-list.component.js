@@ -51,13 +51,13 @@ export default class ExercisesList extends Component {
   render () {
     return (
       <div>
-       <h3>Logged Exercises</h3>
+       <h3> #eatSleepTrainRepeat </h3>
        <table className="table">
         <thead className="thead-light">
           <tr>
-            <th>Username</th>
-            <th>Description</th>
-            <th>Duration</th>
+            <th>Member</th>
+            <th>Movements</th>
+            <th>Duration (min)</th>
             <th>Date</th>
             <th>Actions</th>
           </tr>

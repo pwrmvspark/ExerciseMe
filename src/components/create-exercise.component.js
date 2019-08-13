@@ -74,17 +74,17 @@ export default class CreateExercises extends Component {
       .then(res => console.log(res.data))
 
     // below changes location back to homepage path = '/'
-    // window.location = '/'
+    window.location = '/'
   }
 
 
   render () {
     return (
       <div>
-       <h3>Create New Exercise Log</h3>
+       <h3>Create New Workout</h3>
        <form onSubmit={this.onSubmit}>
         <div className="form-group">
-          <label>Username: </label>
+          <label>Member: </label>
           <select ref="userInput"
             required
             className="form-control"
@@ -132,7 +132,7 @@ export default class CreateExercises extends Component {
 
         <div className="form-group">
           <input type="submit" 
-            value="Create New Exercise Log" 
+            value="submit" 
             className="btn btn-primary" 
           />
         </div>

@@ -79,14 +79,14 @@ export default class EditExercises extends Component {
       duration: this.state.duration,
       date: this.state.date
     }
-
+  
     console.log(exercise)
 
-    axios.post('http://localhost:7777/exercises/update'+this.props.match.param.id, exercise)
+    axios.post('http://localhost:7777/exercises/update/'+this.props.match.params.id, exercise)
       .then(res => console.log(res.data))
 
     // below changes location back to homepage path = '/'
-    // window.location = '/'
+    window.location = '/'
   }
 
 
